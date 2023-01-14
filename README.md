@@ -15,3 +15,5 @@
     <li> Rodar o comando yarn start para iniciar o servidor. Será aberta automaticamente uma aba no navegador, e nela roda o front end da apliação. 
     <li> Com o <a href="https://github.com/jessicacolombo/teste-pratico-DSIN-backend">beckend</a> configurado e rodando na porta 3001 do localhost, o site fica funcional e integrado com o backend. 
 </ol>
+
+### Usuario administrador -> email: leila@mail.com - senha: adminPassword
