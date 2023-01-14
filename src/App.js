@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { RoutesMain } from "./routes";
+import { GlobalStyle } from "./styles/global";
+import { ToastContainer } from "react-toastify";
+import { UserProvider } from "./contexts/userContext";
+import "react-toastify/dist/ReactToastify.css";
+import { SchedulesProvider } from "./contexts/schedulesContext";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <GlobalStyle />
+      <UserProvider>
+        <SchedulesProvider>
+          <RoutesMain />
+        </SchedulesProvider>
+      </UserProvider>
+      <ToastContainer />
     </div>
   );
 }
